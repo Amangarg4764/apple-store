@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login to Apple Store</title>
+<link rel = "icon" href="https://pngimg.com/uploads/apple_logo/apple_logo_PNG19669.png">
+<style>
+*{margin:0;padding:0;
+box-sizing: border-box;}
+#login1 , #login{background:#FBFCFC;color:black;width:400px; height:500px; box-sizing: border-box; position: fixed; left:50%; top:50%; opacity:0.3 ;transform: translate(-50%, -50%); padding:30px 40px; border-radius:40px;}
+#login1 , #login:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);opacity: 0.9;}
+#login1{display:none;}
+#login{display:block;}
+h1{text-align: center; color:black; font-weight: normal; margin-bottom: 20px;}
+input{width: 100%; background: none; border: 1px solid #fff; padding: 6px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color:black;outline:none}
+span{cursor: pointer;}
+input[type="button"]{ background: #bac675; border:0;margin-top:20px; cursor: pointer; color: #3e3d3d;}
+input[type="button"]:hover{ background: #a4b15c;}
+input[type="button1"]{ background: #bac675; border:0;margin-top:5px; cursor: pointer; color: #3e3d3d;}
+input[type="button1"]:hover{ background: #a4b15c;}
+.row {display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap; flex-wrap: wrap;}
+.column {-ms-flex:10%;flex:10%;}
+.column img {margin-top:8px;margin-left:8px;vertical-align: middle;cursor:pointer;}
+img.hover-shadow {transition:0.1s;opacity: 0.3;}
+img.hover-shadow:hover {box-shadow: 0 4px 8px 0 blue, 0 6px 20px 0 blue;opacity: 0.9;}
+</style>
+</head>
+<body BGCOLOR="black" onload="alert('Default Username: Amangarg476@gamil.com \nDefault Password:Amangarg');">
+<div class="row">
+<div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjRlOPQ_IcdqUQVcO1B74DZDu4102fpDDTVw&usqp=CAU" height="250px" width="200px" class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRKIoCHNgxLPGulvsWw0Ti24sad8zx_GG2FNQ&usqp=CAU"height="230px" width="200px" class="hover-shadow cursor">
+    <img src="data:image/jpeg;base64,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"height="240px" width="200px" class="hover-shadow cursor">
+</div>
+<div class="column">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQot_6mTXMgbmodJKj0mXaAULgAoTxqz4ZTQA&usqp=CAU" height="180px" width="200px" class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQTeTJG_Cor9ITT1bcB1qVLzV5ebfoqJ3_F9A&usqp=CAU"height="190px" width="200px" class="hover-shadow cursor">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQpUKzV2G-vD0qsz_VnxPcIbcoYIBotc0RF6Q&usqp=CAU"height="170px" width="200px" class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRMhB4ZCtHEhVPDS-nn7lSgAhPOa_zCbd9t-A&usqp=CAU"height="175px" width="200px" class="hover-shadow cursor">
+ </div>
+ <div class="column">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQdnitbQZnamcJzyb0J0V2_pviNPo3rhOhdog&usqp=CAU"height="250px" width="200px"class="hover-shadow cursor">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQsCUeAQPswl7BAKwLKKCHdwSC_aXcND2HhxA&usqp=CAU"height="250px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1VxptSf1coDMW-hVrgj-CZz6Y6XvZnx1AuQ&usqp=CAU"height="220px" width="200px"class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlk-W3QG2wQoqE-mD48IauZwn574BPC3toKg&usqp=CAU"height="180px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSaKUp8rXzoZ9RaFYuHBoOhoEX_W9xSUYbqwQ&usqp=CAU"height="160px" width="200px"class="hover-shadow cursor">
+	<img src="https://www.bajajfinservmarkets.in/emistore/media/catalog/product/x/r/xrwhitee_1.jpg" height="180px" width="200px"class="hover-shadow cursor">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRdpGxaiBlldpF5HNt-tzO6NzcHbGO8vqmRg&usqp=CAU" height="190px" width="200px"class="hover-shadow cursor">
+ </div>
+<div class="column">
+	<img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-family-select-2020?wid=882&amp;hei=1058&amp;fmt=jpeg&amp;qlt=80&amp;op_usm=0.5,0.5&amp;.v=1586794486444"  height="240px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSyQrPxJ3N3Kygdif9c8Rc_1V9U_OwodXQESQ&usqp=CAU"height="240px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTmCnnyWNPIiVZTA7LHG1s_ogMSyCM_H6Taw&usqp=CAU"height="240px" width="200px"class="hover-shadow cursor">
+ </div>
+<div class="column">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQNdHBcCj5v-BNKBGTRtsCvohKrJv8YRL2OPA&usqp=CAU" height="190px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSF1zu2-nPtFINcvCzr2GXEyZG1Kraa7Hr-5Q&usqp=CAU" height="150px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2plADy1UWpwEBIR5zQ5jvTN7raj1M6-MiRg&usqp=CAU" height="190px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRUuECfhSyLgv1aFwLfrxbycfIdgPNJxXXVPw&usqp=CAU" height="185px" width="200px"class="hover-shadow cursor">
+	</div>
+	<div class="column">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHKqEjqR9FMF03VS4226HIIIjYPhuv0lyZyg&usqp=CAU" height="260px" width="200px"class="hover-shadow cursor">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSawBDVMPYh0vA_nA06L52gatZgELFBrVPBQ&usqp=CAU"height="210px" width="200px"class="hover-shadow cursor">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSesiBFd2j-BMl08mKfnZ2khztiAqWSPlSsRQ&usqp=CAU"height="250px" width="200px"class="hover-shadow cursor">
+ </div>
+</div>
+<div id="login">
+<form>
+<h1>Login</h1>
+<label for="el"><p>Email Id:</p></label>
+<input type="email" id="el" name="el" placeholder="name@gmail.com">
+<label for="pd"><p>Password:</p></label>
+<input type="password" id="pd" name="pd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="********">
+<span onclick="show()">Create Account</span><span style="padding-left:110px">Forgot Pasword?</span>
+<a href="#" id="lod"><input type="button" onclick="check()" id="log" value="Login"></a>
+</form>
+</div>
+<div id="login1">
+<form>
+<h1>Sign Up</h1>
+<label for="fname"><p>First name:</p></label>
+<input type="text" id="fname" name="fname" placeholder="Enter First Name" >
+<label for="lname"><p>Last name:</p></label>
+<input type="text" id="lname" name="lname" placeholder="Enter Last Name">
+<label for="email"><p>Email ID:</p></label>
+<input type="text" id="email" name="email" placeholder="abc@gmail.com">
+<label for="pwd"><p>Password</p></label>
+<input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="********">
+<label for="pwd1"><p>Confirm Password</p></label>
+<input type="password" id="pwd1" name="pwd1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-,Z]).{8,}" placeholder="********">
+<a href="#" id="lod1"><input type="button1" onclick="check1();" value="Sign Up"></a>
+</form>
+</div>
+<script>
+function check1()
+{
+	if(document.getElementById("fname").value != "")
+	{
+		if(document.getElementById("lname").value != "")
+		{
+			if(document.getElementById("email").value != "")
+			{
+				if(document.getElementById("pwd").value != "")
+				{
+					if(document.getElementById("pwd1").value ==document.getElementById("pwd").value)
+					{
+						alert('Congratulation your account is created');
+						document.getElementById("lod1").href="Apple.html";
+					}
+					else
+					{
+					document.getElementById("pwd1").focus();
+					alert("Enter Same Password");
+					}
+				}
+				else
+				{
+				document.getElementById("pwd").focus();
+				alert("Enter valid Password");
+				}
+			}
+			else
+			{
+				document.getElementById("email").focus();
+				alert("Enter valid email ID");
+			}
+		}
+		else
+		{
+			document.getElementById("lname").focus();
+			alert("Enter Last Name");
+		}
+	}
+	else
+	{
+	document.getElementById("fname").focus();
+	alert("Enter First Name");
+	}
+}
+function hide1(){
+	document.getElementById("login").style.display="none";
+	}
+function show(){
+	hide1();
+	document.getElementById("login1").style.display="block";
+	}
+function check(){
+
+	if(document.getElementById("el").value=="Amangarg476@gmail.com")
+	{
+		if(document.getElementById("pd").value=="Amangarg")
+		{
+			document.getElementById("lod").href="Apple.html";
+		}
+		else{
+		alert("Enter valid Password");
+		document.getElementById("pd").focus();
+		}
+	}
+	else
+	{	
+		alert("Enter valid Id & Password");
+		
+	}
+}
+</script>
+</body>
+<html>

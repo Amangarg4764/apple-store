@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head><title>Delivery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet"> 
+<style>
+
+#right_t{
+  font-size: 70px;
+  color: rgb(0,255,70);
+}
+.button {
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 8px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2px 20px ;
+  outline: none;
+  width:15%;
+  font-family: 'Baloo Tamma 2', cursive;
+
+}
+
+.button1 {
+  background-color:transparent;
+  color: white; 
+  border: 2px solid rgb(0,255,70);
+   -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.button1:hover {
+  background-color: rgb(0,255,70);
+  color: white;
+
+  -moz-box-shadow: 0 0 8px rgb(0,255,70);
+  -webkit-box-shadow: 0 0 8px rgb(0,255,70);
+  box-shadow: 5px 5px 18px rgb(0,255,70);
+  border: 2 px solid rgb(0,255,70);
+  border-radius: 2px 20px ;
+  outline: none;
+  font-size: 15px;
+}
+
+.button2 {
+  background-color:transparent;
+  color:white; 
+  border: 2px solid red;
+   -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+.button2:hover {
+  background-color: red;
+  color: white;
+  -moz-box-shadow: 0 0 8px red;
+  -webkit-box-shadow: 0 0 8px red;
+  box-shadow: 5px 5px 18px red;
+  border: 2 px solid red;
+  border-radius: 2px 20px ;
+  outline: none;
+  font-size: 15px;
+}
+
+
+input[type=text],[type=email] {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0,255,70);
+  border-radius: 2px 20px;
+  text-align: center;
+  background-color: transparent;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  float: right;
+  color: white;
+}
+input[type=text]:focus,[type=email]:focus{
+-moz-box-shadow: 0 0 8px rgb(0,255,70);
+  -webkit-box-shadow: 0 0 8px rgb(0,255,70);
+  box-shadow: 5px 5px 18px rgb(0,255,70);
+  border: 2 px solid rgb(0,255,70);
+  border-radius: 2px 20px ;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+}
+
+tr{
+  height: 60px;
+}
+
+::placeholder{
+color: white;
+ font-family: 'Baloo Tamma 2', cursive;
+}
+legend{
+  color:rgb(0,255,70);
+  font-family: 'Baloo Tamma 2', cursive;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200px;
+}
+
+label{
+  color: rgb(0,255,70);
+  font-family: 'Baloo Tamma 2', cursive;
+}
+body {
+  background-color: rgb(30,30,30);
+}
+
+.container{
+  background-color: rgb(30,30,30);
+}
+.section1{width:55%; position:absolute;border-style: solid; border-color: white;}
+.section2{margin-left:61%;
+color:red;position: relative;}
+</style>
+</head>
+<body>
+  <fieldset >
+    <legend><span style="color:white;">DELIVERY</span><span style="color: rgb(0,255,70);"> DETAILS</span></legend>
+  <div class="container">
+<div class="section1">
+<form>
+<table>
+  <tr>
+    <td style="width: 75%"> <label for="First Name">First Name</label></td>
+    <td><input type="text" name="First Name" id="First Name" placeholder="Krish" width="100%" required></td>
+</tr>
+<tr>
+    <td><label for="Last Name">Last Name</label></td>
+    <td><input type="text" name="Last Name" id="Last Name"placeholder="Goyal" required></td>
+</tr>
+<tr>
+    <td><label for="Contact Number">Contact Number</label></td>
+    <td><input type="text" name="Contact Number" id="Contact Number" placeholder="10 Digit Mobile Number" maxlength="10"></td>
+</tr>
+<tr>
+    <td><label for="Email Address">Email Address</label></td>
+    <td><input type="email" name="Email Address" id="Email Address" placeholder="abc@xyz.com" required></td>
+<tr>
+    <td><label for="Pin Code">PIN CODE</label></td>
+    <td><input type="text" name="Pin Code" id="Pin Code" placeholder="6 Digit Code" maxlength="6" ></td>
+</tr>
+
+<tr>
+    <td><label for="Address">Address (Area & Street)</label></td>
+    <td><input type="text" name="Address" id="Address" placeholder="H.NO./Street/Area" ></td>
+</tr>    
+<tr>
+    <td><label for="Landmark">Landmark</label></td>
+    <td><input type="text" name="Landmark" id="Landmark" placeholder="Enter Landmark" rowspan="2" ></td>
+</tr>
+<tr>
+    <td><label for="City & District">City & District</label></td>
+    <td><input type="text" name="City & District" id="City & District" placeholder="Enter City & District"></td>
+</tr>
+<tr>
+    <td><label for="State">State</label></td>
+    <td><input type="text" name="State" id="State" placeholder="Enter State"></td>
+</tr>    
+<tr>
+    <td><label for="Alternate Contact Number">Alternate Contact Number (Optional)</label></td>
+    <td><input type="text" name="Alternate Contact Number" id="Alternate Contact Number" placeholder="10 Digit Mobile Number"></td>
+</tr>
+</form>
+<tr>
+  <td colspan="2">
+  <center>
+   <a href="pay.html"> <button class="button button1" type="button" style="width: 250px;">SAVE & DELIVER HERE</button></a>
+  <button style="width: 150px;" class="button button2" type="reset">CANCEL</button>
+  </center>
+  </td>
+  <td></td>
+</tr>
+</table>
+</div>
+<div class="section2" >
+
+<div id="top" style="font-family: 'Allerta Stencil', sans-serif; height: 200px;">
+ <span id="right_t"><center>Hassle<span style="color: white;">-free</span> Delivery</center></span> 
+</div>
+
+
+<div id="animation" style="height: 200px;" >
+ <center> <img src="https://image.flaticon.com/icons/svg/726/726455.svg" style="width: 300px; height: 200px; margin-top: 50px;">
+  </center>
+</div>
+
+
+<div id="bottom" style="font-family: 'Allerta Stencil', sans-serif; height: 300px; margin-top: 90px;">
+ <span id="right_t"><center>With<span style="color: white;"> Us</span></center> </span>
+</div>
+
+</div>
+</div>
+</fieldset>
+</body>
+</html>
