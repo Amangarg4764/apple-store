@@ -14,7 +14,7 @@
 .navbar{
 	background:#D0D3D4;
 }
- @media only screen and (min-width : 992px) {    
+ @media only screen and (min-width : 1200px) {    
 .btn_align{
 	padding-left:1310px;
 }
