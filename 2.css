@@ -14,8 +14,9 @@
 .navbar{
 	background:#D0D3D4;
 }
+
 .btn_align{
-	padding-left:1310px;
+	float:right;
 }
 
 /*--------slider----------*/
